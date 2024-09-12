@@ -1,6 +1,5 @@
 baseURL = "https://mikita.github.io/"
 languageCode = "en-us"
-theme = "raditian-free-hugo-theme"
 
 # Plugins
 [params.plugins]

@@ -5,15 +5,15 @@ showcase:
   subtitle: "Ph.D. candidate (Economics)"
   description: "I am a Ph.D. candidate at University of Washington, Seattle. My research interests are in International Macroeconomics and Banking. I am currently on the job market and available for interviews."
   image:
-    x: "img/showcase/showcase.png"
-    _2x: "img/showcase/showcase@2x.png"
+    x: "img/headshot/mikita-headshot.jpg"
+    _2x: "img/headshot/mikita-headshot@2x.jpg"
   imageMobile:
-    x: "img/showcase/showcase-mobile.jpg"
+    x: "img/headshot/mikita-headshot.jpg"
 
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "https://radity.com/en/contact/"
+    URL: "#"
 
   socialLinks:
     - icon: "linkedin"
@@ -25,20 +25,20 @@ showcase:
 # about
 about:
   enable: true
-  title: "Who am I?"
-  content: '<p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac arcu lacus. Maecenas ut enim sit amet dui bibendum ornare a at tellus. Mauris nec ultricies ipsum. Phasellus vel ex sollicitudin, iaculis justo in, cursus enim. Sed fringilla, tellus eget aliquam porttitor, enim odio laoreet nibh, id elementum nibh sapien a urna.
-    </p>
+  title: "Research"
+  items:
+    - title: "Sudden stops and bank competition"
+      description: "Lorem ipsum todo"
+    - title: "Foreign exchange reserve accumulation"
+      description: "Lorem ipsum todo"
+  content: '
     <p class="lead">
     My area of focus lies in ...
     </p>'
   button:
     icon: "icon-smile-fill"
-    btnText: "About Me"
-    URL: "https://www.linkedin.com/in/mikitakhurana/"
-  image:
-    x: "img/who-am-i/mikita-headshot.jpg"
-    _2x: "img/who-am-i/mikita-headshot@2x.jpg"
+    btnText: "Research Statement"
+    URL: "#"
 
 # education
 education:

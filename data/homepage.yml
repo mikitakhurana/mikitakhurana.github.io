@@ -3,7 +3,7 @@ showcase:
   enable: true
   title: "Mikita Khurana"
   subtitle: "Ph.D. candidate (Economics)"
-  description: "I am a Ph.D. candidate specializing in international macroeconomics, banking, and financial markets. My research focuses on the dynamics of capital flows and their effects on banking stability and economic performance.  My goal is to contribute to frameworks that enhance financial stability and inform policy decisions in a globalized financial system."
+  description: "I am a Ph.D. candidate specializing in International Macroeconomics, Banking, and Financial markets. My research focuses on the dynamics of capital flows and their effects on banking stability and economic performance.  My goal is to contribute to frameworks that enhance financial stability and inform policy decisions in a globalized financial system."
   image:
     x: "img/headshot/mikita-headshot.jpg"
     _2x: "img/headshot/mikita-headshot@2x.jpg"
@@ -13,7 +13,7 @@ showcase:
   button:
     icon: "icon-mail-fill"
     btnText: "Contact"
-    URL: "mailto:mikita13@uw.edu"
+    URL: "mailto:mikitakhurana@gmail.com"
 
   socialLinks:
     - icon: "linkedin"
@@ -27,14 +27,24 @@ about:
   enable: true
   title: "Research"
   items:
-    - title: "Sudden stops and bank competition"
-      description: "Lorem ipsum todo"
-    - title: "Foreign exchange reserve accumulation"
-      description: "Lorem ipsum todo"
-  content: '
-    <p class="lead">
-    My area of focus lies in ...
-    </p>'
+    - title: "Sudden Stops And Bank Competition (Job Market Paper)"
+      description: "This study investigates the implications of sudden stops on the competitive landscape of the banking
+sector. Using data for 46 emerging economies, the study presents evidence of a reduction in banking
+competition following a sudden stop episode. This paper employs a small open economy model featuring
+banks that operate under imperfect competition and face an occasionally binding collateral constraint.
+The entry and exit of banks influence the market power of existing incumbents. The diminishing
+availability of external funds triggers a contraction in the banking sector, resulting in a reduced number
+of banks. The resulting decrease in the number of banks amplifies market concentration, empowering
+surviving institutions to exercise greater pricing power. This drives up loan rates, exacerbating the
+borrowing costs for firms and households."
+    - title: "Bank Heterogeneity And Imperfect Competition"
+      description: "This paper develops a DSGE open economy model featuring a banking sector with heterogeneous banks,
+characterized by a Pareto distribution of productivity and subject to occasionally binding collateral
+constraints on foreign borrowing. The model investigates how bank productivity heterogeneity interacts
+with external financing conditions, affecting credit supply, firm investment, and macroeconomic stability.
+The analysis explores the dynamic responses to key shocks, including sudden stops in capital flows,
+central bank interest rate adjustments, and changes in bank entry and operational costs."
+  content: ''
   button:
     icon: "icon-smile-fill"
     btnText: "Research Statement"
@@ -56,8 +66,8 @@ education:
 # experience
 experience:
   enable: true
-  title: "Experience"
-  description: "Todo: Add experience"
+  title: "Teaching"
+  description: ""
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
@@ -65,20 +75,40 @@ experience:
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"
-    URL: "#"
+    URL: "https://drive.google.com/file/d/1BrDY3nybi6V-2J9F2x-qh5aN1hpSP17K/view?usp=sharing"
 
   items:
-    - title: "Economics Researcher"
-      company: "A"
-      duration: "Feb 2011 - Sep 2019"
+    - title: "Instructor"
+      company: "University of Washington, Seattle"
+      duration: "Summer 2021 - Fall 2024"
+      details:
+        - description: "Managerial Economics"
+        - description: "Intermediate Macroeconomics"
+        - description: "Introduction to Microeconomics"
+        - description: "Graduate Math Camp"
 
-    - title: "Economics Researcher"
-      company: "B"
-      duration: "Apr 2010 - Jan 2011"
+    - title: "Graduate Teaching Assistant"
+      company: "University of Washington, Seattle"
+      duration: "Fall 2022"
+      details:
+        - description: "Macroeconomic Analysis I"
 
-    - title: "Economics Researcher"
-      company: "C"
-      duration: "Jun 2009 - Mar 2010"
+    - title: "Teaching Assistant"
+      company: "University of Washington, Seattle"
+      duration: "Winter 2020 - Spring 2021"
+      details:
+        - description: "Introduction to Microeconomics"
+        - description: "Introduction to Macroeconomics"
+
+    - title: "Reader/Grader"
+      company: "University of Washington, Seattle"
+      duration: "Winter 2021 - Spring 2023"
+      details:
+        - description: "Advanced Macroeconomics"
+        - description: "Investment, Capital and Finance"
+        - description: "Topics in Financial Economics"
+        - description: "Topics in Monetary Economics"
+        - description: "Economic Analysis of the Law"
 
 # Client & Work
 client_and_work:

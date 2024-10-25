@@ -2,8 +2,8 @@
 showcase:
   enable: true
   title: "Mikita Khurana"
-  subtitle: "Ph.D. candidate (Economics)"
-  description: "I am a Ph.D. candidate specializing in International Macroeconomics, Banking, and Financial markets.<br /> My research focuses on the dynamics of capital flows and their effects on banking stability and economic performance.  My goal is to contribute to frameworks that enhance financial stability and inform policy decisions in a globalized financial system."
+  subtitle: "Ph.D. candidate in Economics"
+  description: "I am a Ph.D. candidate specializing in International Macroeconomics, Banking, and Financial Markets.<br /> My research focuses on the dynamics of capital flows and their effects on banking stability and economic performance.  My goal is to contribute to frameworks that enhance financial stability and inform policy decisions in a globalized financial system."
   image:
     x: "img/headshot/mikita-headshot.jpg"
     _2x: "img/headshot/mikita-headshot@2x.jpg"

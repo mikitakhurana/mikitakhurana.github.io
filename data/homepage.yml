@@ -69,9 +69,9 @@ experience:
   title: "Teaching"
   description: ""
   button:
-    icon: "icon-linkedin-fill"
-    btnText: "Linkedin"
-    URL: "https://www.linkedin.com/in/mikitakhurana/"
+    icon: "icon-profile-fill"
+    btnText: "Teaching Dossier"
+    URL: "/teaching_dossier.pdf"
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My Resume"

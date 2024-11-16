@@ -45,10 +45,14 @@ with external financing conditions, affecting credit supply, firm investment, an
 The analysis explores the dynamic responses to key shocks, including sudden stops in capital flows,
 central bank interest rate adjustments, and changes in bank entry and operational costs."
   content: ''
-  button:
-    icon: "icon-smile-fill"
+  button1:
+    icon: "icon-profile-fill"
     btnText: "Research Statement"
     URL: "/research_statement.pdf"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Job Market Paper"
+    URL: "https://drive.google.com/file/d/1Ff4-Rw_wGU3VqHkKuXI84s8eB18EEitB/view?usp=sharing"
 
 # education
 education:

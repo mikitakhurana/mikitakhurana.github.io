@@ -48,7 +48,7 @@ central bank interest rate adjustments, and changes in bank entry and operationa
   button:
     icon: "icon-smile-fill"
     btnText: "Research Statement"
-    URL: "#"
+    URL: "/research_statement.pdf"
 
 # education
 education:

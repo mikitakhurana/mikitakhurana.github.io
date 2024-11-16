@@ -59,13 +59,13 @@ education:
   enable: true
   title: "Education"
   items:
+    - university: "University of Washington, Seattle"
+      year: "2019 - 2025"
+      degree: "Ph.D. Economics"
+
     - university: "Delhi School of Economics, University of Delhi"
       year: "2014-2016"
       degree: "M.A. Economics"
-
-    - university: "University of Washington, Seattle"
-      year: "2019 - present"
-      degree: "Ph.D. Economics"
 
 # experience
 experience:

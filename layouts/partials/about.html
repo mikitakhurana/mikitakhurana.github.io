@@ -33,6 +33,10 @@
         <li>
           <div>
             <h5 class="font-weight-bolder">{{ .title }}</h5>
+            <!-- If .link has value, then add as (Link) hyperlink -->
+            {{ if .link }}
+              <p><a href="{{ .link }}" target="_blank">Download</a></p>
+            {{ end }}
             <p>{{ .description }}</p>
           </div>
         </li>

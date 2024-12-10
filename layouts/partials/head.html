@@ -2,7 +2,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 <!-- Google Tag Manager -->
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMVXMZYG76"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VMVXMZYG76');
+</script>
+<!-- <script>
     (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
@@ -17,7 +26,7 @@
             'https://www.googletagmanager.com/gtm.js?id={{ .Site.Params.googleTagManagerID }}' + i + dl;
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', '{{ .Site.Params.googleTagManagerID }}');
-</script>
+</script> -->
 <!-- End Google Tag Manager -->
 <!-- endinject -->
 <title>{{ .Site.Data.homepage.head.title }}</title>

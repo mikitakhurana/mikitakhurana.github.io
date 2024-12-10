@@ -56,6 +56,13 @@ central bank interest rate adjustments, and changes in bank entry and operationa
     btnText: "Download my Job Market Paper"
     URL: "https://drive.google.com/file/d/1Ff4-Rw_wGU3VqHkKuXI84s8eB18EEitB/view?usp=sharing"
 
+# conferences (new section)
+conferences:
+  enable: true
+  title: "Conferences"
+  items:
+    - description: "Midwest Economics Association (MEA) 89th Annual Meeting in Kansas City, Missouri (March 21-23, 2025)"
+
 # education
 education:
   enable: true

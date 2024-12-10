@@ -1,0 +1,14 @@
+{{ if .Site.Data.homepage.conferences.enable }}
+<section class="section conferences my-auto" id="conferences">
+  <div class="container">
+    <h2 class="section__title pb-2">{{ .Site.Data.homepage.conferences.title }}</h2>
+    <div class="conferences__list">
+      <ul class="pl-0">
+        {{ range .Site.Data.homepage.conferences.items }}
+        <li class="font-weight-normal">{{ .description }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }} 

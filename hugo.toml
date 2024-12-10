@@ -68,9 +68,9 @@ languageCode = "en-us"
 
 [params]
 
-  sections = ["showcase", "about", "experience", "education", "client-and-work", "testimonial", "contact", "newsletter"]
+  sections = ["showcase", "about", "conferences", "experience", "education", "client-and-work", "testimonial", "contact", "newsletter"]
 
-  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+  googleTagManagerID = "G-VMVXMZYG76" # Google Analytics works with Google Tag Manager
 
   [params.logo]
     text1 = "Mikita"

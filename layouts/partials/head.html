@@ -30,6 +30,19 @@
 <!-- End Google Tag Manager -->
 <!-- endinject -->
 <title>{{ .Site.Data.homepage.head.title }}</title>
+{{ if .IsHome }}
+  {{ $profile := .Site.Data.homepage }}
+  <meta name="description" content="{{ $profile.head.description }}"/>
+  <link rel="canonical" href="{{ .Permalink }}"/>
+  <meta property="og:type" content="profile"/>
+  <meta property="og:title" content="{{ $profile.head.title }}"/>
+  <meta property="og:description" content="{{ $profile.head.description }}"/>
+  <meta property="og:url" content="{{ .Permalink }}"/>
+  <meta property="og:image" content="{{ $profile.showcase.image.x | absURL }}"/>
+  {{ $person := dict "@type" "Person" "name" $profile.showcase.title "url" .Permalink "image" ($profile.showcase.image.x | absURL) "description" $profile.head.description "sameAs" (slice "https://www.linkedin.com/in/mikitakhurana/" "https://econ.washington.edu/people/mikita-khurana") }}
+  {{ $page := dict "@context" "https://schema.org" "@type" "ProfilePage" "mainEntity" $person }}
+  <script type="application/ld+json">{{ $page | jsonify | safeJS }}</script>
+{{ end }}
 <style>
     /* Fade In animation triggering after font load or 3s timeout */
     .rad-fade-in {
@@ -222,5 +235,5 @@
 </style>
 
 {{ range .Site.Params.plugins.css }}
-<link rel="stylesheet" href="{{ .URL | absURL }}"/>
+<link rel="stylesheet" href="{{ .URL | relURL }}"/>
 {{ end }}

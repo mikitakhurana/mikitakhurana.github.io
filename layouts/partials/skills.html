@@ -1,0 +1,15 @@
+{{ with .Site.Data.homepage.skills }}
+<section class="portfolio-section skills-section" id="skills" aria-labelledby="skills-heading">
+  <div class="container">
+    <h2 class="portfolio-heading" id="skills-heading">{{ .title }}</h2>
+    <div class="skills-groups">
+      {{ range .groups }}
+      <div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .methods }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

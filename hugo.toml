@@ -1,5 +1,6 @@
 baseURL = "https://mikitakhurana.github.io/"
-languageCode = "en-us"
+languageCode = "en-ca"
+enableRobotsTXT = true
 
 # Plugins
 [params.plugins]
@@ -30,19 +31,29 @@ languageCode = "en-us"
   weight = 2
 
   [[menu.header]]
+  name = "Experience"
+  URL = "#experience"
+  weight = 3
+
+  [[menu.header]]
+  name = "Skills"
+  URL = "#skills"
+  weight = 4
+
+  [[menu.header]]
   name = "Research"
   URL = "#research"
-  weight = 3
+  weight = 5
 
   [[menu.header]]
   name = "Teaching"
   URL = "#teaching"
-  weight = 4
+  weight = 6
 
   [[menu.header]]
   name = "Education"
   URL = "#education"
-  weight = 5
+  weight = 7
 
 
   [[menu.footer]]
@@ -51,24 +62,34 @@ languageCode = "en-us"
   weight = 2
 
   [[menu.footer]]
+  name = "Experience"
+  URL = "#experience"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Skills"
+  URL = "#skills"
+  weight = 4
+
+  [[menu.footer]]
   name = "Research"
   URL = "#research"
-  weight = 3
+  weight = 5
 
   [[menu.footer]]
   name = "Teaching"
   URL = "#teaching"
-  weight = 4
+  weight = 6
 
   [[menu.footer]]
   name = "Education"
   URL = "#education"
-  weight = 5
+  weight = 7
 
 
 [params]
 
-  sections = ["showcase", "about", "conferences", "experience", "education", "client-and-work", "testimonial", "contact", "newsletter"]
+  sections = ["showcase", "industry", "skills", "about", "conferences", "experience", "education", "client-and-work", "testimonial", "contact", "newsletter"]
 
   googleTagManagerID = "G-VMVXMZYG76" # Google Analytics works with Google Tag Manager
 

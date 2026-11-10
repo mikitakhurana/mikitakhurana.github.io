@@ -1,0 +1,25 @@
+{{ with .Site.Data.homepage.industry }}
+<section class="portfolio-section" id="experience" aria-labelledby="experience-heading">
+  <div class="container">
+    <h2 class="portfolio-heading" id="experience-heading">{{ .title }}</h2>
+    <div class="industry-roles">
+      {{ range .items }}
+      <article class="industry-role portfolio-split">
+        {{ with .logo }}
+        <img class="industry-logo" src="{{ . | relURL }}" alt="" loading="lazy" decoding="async">
+        {{ end }}
+        <div class="industry-identity">
+          <h3>{{ .company }}</h3>
+          <p class="portfolio-meta">{{ .dates }}</p>
+          <p class="portfolio-meta">{{ .location }}</p>
+        </div>
+        <div class="industry-detail">
+          <p class="industry-title">{{ .role }}</p>
+          {{ range .details }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

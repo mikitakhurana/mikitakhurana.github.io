@@ -1,6 +1,6 @@
 <!-- inject:../components/baseHead/baseHeadStart.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.Language.LanguageCode }}">
 
 <head>
 
@@ -14,9 +14,11 @@
 
 	{{ partial "header.html" . }}
 
-	{{ range .Site.Params.sections }}
-	{{ partial . $ }}
-	{{ end }}
+	<main>
+		{{ range .Site.Params.sections }}
+		{{ partial . $ }}
+		{{ end }}
+	</main>
 
 	{{ partial "footer.html" . }}
     {{ partial "base-foot.html" . }}

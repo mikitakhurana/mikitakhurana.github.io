@@ -1,47 +1,25 @@
-{{ if .Site.Data.homepage.about.enable }}
-<section class="section rad-animation-group pb-0 my-auto" id="research">
-  <div class="container rad-fade-down mb-4">
-     <div class="row d-flex flex-column-reverse flex-md-row">
-        <div class="col-12 my-auto my-auto">
-          <h2>{{ .Site.Data.homepage.about.title }}</h2>
-          <p class="lead">
-            {{ .Site.Data.homepage.about.content | safeHTML }}
-          </p>
-          <a
-            href="{{ .Site.Data.homepage.about.button1.URL | absURL }}"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            <i class="{{ .Site.Data.homepage.about.button1.icon }}"></i>
-            {{ .Site.Data.homepage.about.button1.btnText }}
-          </a>
-          <a
-            href="{{ .Site.Data.homepage.about.button2.URL | absURL }}"
-            target="_blank"
-            class="btn btn-frameless"
-          >
-            <i class="{{ .Site.Data.homepage.about.button2.icon }}"></i>
-            {{ .Site.Data.homepage.about.button2.btnText }}
-          </a>
-        </div>
+{{ with .Site.Data.homepage.about }}
+{{ if .enable }}
+<section class="portfolio-section" id="research" aria-labelledby="research-heading">
+  <div class="container">
+    <div class="portfolio-split">
+      <div>
+        <h2 class="portfolio-heading" id="research-heading">{{ .title }}</h2>
+        <p class="portfolio-intro">{{ .content }}</p>
+        <a class="portfolio-link" href="{{ .button1.URL | relURL }}">{{ .button1.btnText }} (PDF)</a>
       </div>
-  </div>
-  <div class="container rad-fade-down">
-    <!-- Add rows for research -->
-    <ul style="padding-inline-start: 0px;">
-      {{ range .Site.Data.homepage.about.items }}
-        <li>
-          <div>
-            <h5 class="font-weight-bolder">{{ .title }}</h5>
-            <!-- If .link has value, then add as (Link) hyperlink -->
-            {{ if .link }}
-              <p><a href="{{ .link }}" target="_blank">Download</a></p>
-            {{ end }}
-            <p>{{ .description }}</p>
-          </div>
-        </li>
-      {{ end }}
-    </ul>
+      <div class="portfolio-entries">
+        {{ range .items }}
+        <article>
+          {{ with .type }}<p class="portfolio-meta">{{ . }}</p>{{ end }}
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+          {{ if .link }}<a class="portfolio-link" href="{{ .link }}" aria-label="Read paper: {{ .title }}">Read paper</a>{{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
   </div>
 </section>
+{{ end }}
 {{ end }}

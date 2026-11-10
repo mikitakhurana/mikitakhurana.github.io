@@ -1,1 +1,221 @@
-/* You can customize theme styles here */
+.profile-intro {
+  padding: clamp(7rem, 12vw, 10rem) 0 clamp(3rem, 7vw, 6rem);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: clamp(2rem, 7vw, 6rem);
+}
+
+.profile-copy h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+
+.profile-role {
+  margin: 0.45rem 0 0;
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  font-weight: 500;
+}
+
+.profile-location,
+.portfolio-section .portfolio-meta {
+  color: #515151;
+}
+
+.profile-location {
+  margin: 0.3rem 0 1.3rem;
+}
+
+.profile-copy .lead {
+  max-width: 52ch;
+}
+
+.profile-actions,
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+}
+
+.profile-links {
+  padding: 0;
+  margin: 1.3rem 0 0;
+  list-style: none;
+}
+
+.profile-links a,
+.portfolio-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.profile-links a:hover,
+.portfolio-link:hover {
+  color: #a62d27;
+}
+
+.profile-intro a:focus-visible,
+.portfolio-section a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.profile-portrait {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+  justify-self: end;
+}
+
+.profile-intro,
+.portfolio-section {
+  scroll-margin-top: 6rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 991px) {
+  .header:has(.navbar-collapse.show, .navbar-collapse.collapsing) {
+    background-color: #fff;
+  }
+}
+
+.portfolio-section {
+  padding-block: clamp(3rem, 6vw, 5rem);
+  border-top: 1px solid #dedbd7;
+}
+
+.portfolio-section .portfolio-heading {
+  margin: 0;
+  font-size: clamp(1.75rem, 3.4vw, 2.65rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.portfolio-section h3 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.portfolio-section p,
+.portfolio-list {
+  margin: 0 0 0.65rem;
+  max-width: 68ch;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.portfolio-section .portfolio-meta {
+  margin: 0 0 0.16rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.portfolio-section .portfolio-intro {
+  max-width: 32ch;
+  margin: 0.9rem 0;
+}
+
+.portfolio-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1.25rem clamp(2rem, 5vw, 4.5rem);
+}
+
+.portfolio-list {
+  padding-inline-start: 1.1rem;
+}
+
+.portfolio-list li + li {
+  margin-top: 0.28rem;
+}
+
+.portfolio-entries article + article {
+  margin-top: 1.55rem;
+  padding-top: 1.55rem;
+  border-top: 1px solid #e6e3de;
+}
+
+.portfolio-entries article > :last-child,
+.industry-detail > :last-child,
+.skills-groups p {
+  margin-bottom: 0;
+}
+
+.industry-roles {
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+}
+
+.industry-role {
+  row-gap: 0.55rem;
+}
+
+.industry-role + .industry-role {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e6e3de;
+}
+
+.industry-logo {
+  display: block;
+  grid-column: 1 / -1;
+  width: auto;
+  height: 1.75rem;
+  max-width: 8.75rem;
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+.industry-title {
+  font-weight: 700;
+}
+
+.skills-section {
+  background: #f7f6f3;
+}
+
+.skills-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem clamp(1.5rem, 3vw, 3rem);
+  margin-top: clamp(1.25rem, 3vw, 2rem);
+}
+
+.conferences-section {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.conferences-section .portfolio-heading {
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+@media (max-width: 767px) {
+  .profile-grid,
+  .portfolio-split,
+  .skills-groups {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .profile-portrait {
+    justify-self: start;
+    width: min(100%, 290px);
+  }
+}

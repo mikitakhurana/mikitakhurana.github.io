@@ -1,14 +1,16 @@
-{{ if .Site.Data.homepage.conferences.enable }}
-<section class="section conferences my-auto" id="conferences">
+{{ with .Site.Data.homepage.conferences }}
+{{ if .enable }}
+<section class="portfolio-section conferences-section" id="conferences" aria-labelledby="conferences-heading">
   <div class="container">
-    <h2 class="section__title pb-2">{{ .Site.Data.homepage.conferences.title }}</h2>
-    <div class="conferences__list">
-      <ul class="pl-0">
-        {{ range .Site.Data.homepage.conferences.items }}
-        <li class="font-weight-normal">{{ .description }}</li>
+    <div class="portfolio-split">
+      <h2 class="portfolio-heading" id="conferences-heading">{{ .title }}</h2>
+      <ul class="portfolio-list">
+        {{ range .items }}
+        <li>{{ .description }}</li>
         {{ end }}
       </ul>
     </div>
   </div>
 </section>
-{{ end }} 
+{{ end }}
+{{ end }}

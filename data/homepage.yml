@@ -1,14 +1,19 @@
+head:
+  title: "Mikita Khurana | Applied Economist, Forecasting & Data Science"
+  description: "Mikita Khurana is an applied economist in Vancouver, BC. She builds revenue forecasts at EA SPORTS and studies banking, capital flows and financial markets."
+
 # showcase
 showcase:
   enable: true
   title: "Mikita Khurana"
-  subtitle: "Ph.D. candidate in Economics"
-  description: "I am a Ph.D. candidate specializing in International Macroeconomics, Banking, and Financial Markets.<br /> My research focuses on the dynamics of capital flows and their effects on banking stability and economic performance.  My goal is to contribute to frameworks that enhance financial stability and inform policy decisions in a globalized financial system."
+  subtitle: "Applied economist"
+  location: "Vancouver, BC"
+  description: "I build forecasts and quantitative models for business decisions. At EA SPORTS, I forecast FC live-service revenue for quarterly planning. I hold a PhD in Economics from the University of Washington."
+  resume: "https://drive.google.com/file/d/1XTSR-D9kcZuidLlAAjB6k8cuyXTlgs4v/view?usp=sharing"
   image:
     x: "img/headshot/mikita-headshot.jpg"
     _2x: "img/headshot/mikita-headshot@2x.jpg"
-  imageMobile:
-    x: "img/headshot/mikita-headshot.jpg"
+    alt: "Portrait of Mikita Khurana"
 
   button:
     icon: "icon-mail-fill"
@@ -17,17 +22,77 @@ showcase:
 
   socialLinks:
     - icon: "linkedin"
+      label: "LinkedIn"
       URL: "https://www.linkedin.com/in/mikitakhurana/"
 
     - icon: "github"
+      label: "GitHub"
       URL: "https://github.com/mikitakhurana"
+
+industry:
+  title: "Experience"
+  items:
+    - company: "EA SPORTS"
+      # https://commons.wikimedia.org/wiki/File:EASports_Wordmark_Black.svg
+      logo: "img/employers/ea-sports.svg"
+      role: "Senior Analyst, FC Live Service Forecasting"
+      dates: "Jan 2026 – Present"
+      location: "Vancouver, BC"
+      details:
+        - "I built and automated the cohort revenue forecast used in quarterly planning for EA SPORTS FC. The model links weekly active players, conversion and spend per paying player to revenue."
+        - "I compare scenarios across game modes and for the franchise overall, and present the assumptions and uncertainty to product, commercial and finance partners."
+    - company: "Freddie Mac"
+      # https://www.freddiemac.com/
+      logo: "img/employers/freddie-mac.svg"
+      role: "Quantitative Analytics Senior, Risk Management"
+      dates: "Jul 2025 – Dec 2025"
+      location: "McLean, VA"
+      details:
+        - "I produced quarterly performance and governance reports for loss-given-default (LGD), mortgage default and prepayment models. I used waterfall analysis to attribute changes in LGD to portfolio characteristics."
+    - company: "RedPeak Economics Consulting"
+      role: "Consultant, Financial Modeling"
+      dates: "May 2024 – Sep 2024"
+      location: "Seattle, WA"
+      details:
+        - "I worked with economists and legal experts to interpret financial time-series results for litigation."
+    - company: "Amazon"
+      # https://commons.wikimedia.org/wiki/File:Amazon_2024.svg
+      logo: "img/employers/amazon.svg"
+      role: "Economist Intern, Time Series Forecasting"
+      dates: "Jun 2022 – Sep 2022"
+      location: "Seattle, WA"
+      details:
+        - "I built and implemented advertising revenue forecasts using ARIMA, vector autoregression (VAR) and dynamic panel models."
+    - company: "AIG Insurance"
+      role: "Junior Manager, Portfolio Optimization Team"
+      dates: "Sep 2017 – May 2018"
+      location: "Bengaluru, India"
+      details:
+        - "I worked with actuaries to model mortality for annuity pricing, using logistic regression to assess variation across economic and geographic factors. I also used text classification to categorize customer complaints."
+    - company: "Capgemini"
+      role: "Consultant, Data Science Team"
+      dates: "Jun 2016 – Jul 2017"
+      location: "Bengaluru, India"
+      details:
+        - "I built models to predict assembly-line failures and leaks, using daily error logs for k-means clustering, classification and regression trees, and multinomial regression. I also built a recommendation engine using Apriori association rules."
+
+skills:
+  title: "Technical skills"
+  groups:
+    - title: "Forecasting & Statistics"
+      methods: "Time-series forecasting, ARIMA, VAR, dynamic panels, state-space models, Bayesian econometrics, Markov switching, survival analysis, difference-in-differences, instrumental variables"
+    - title: "Data & Product Analytics"
+      methods: "SQL, Python (pandas, NumPy, scikit-learn, statsmodels, PyTorch), R, MATLAB, SAS, KPI frameworks, driver decomposition, scenario planning, sensitivity analysis"
+    - title: "Machine Learning & AI"
+      methods: "Predictive modelling, logistic regression, classification, clustering, CART, association rules, AI-assisted model development"
 
 # about
 about:
   enable: true
   title: "Research"
   items:
-    - title: "Sudden Stops And Bank Competition (Job Market Paper)"
+    - title: "Sudden Stops and Bank Competition"
+      type: "Job market paper"
       link: "https://drive.google.com/file/d/1Ff4-Rw_wGU3VqHkKuXI84s8eB18EEitB/view?usp=sharing"
       description: "This study investigates the implications of sudden stops on the competitive landscape of the banking
 sector. Using data for 46 emerging economies, the study presents evidence of a reduction in banking
@@ -38,7 +103,7 @@ availability of external funds triggers a contraction in the banking sector, res
 of banks. The resulting decrease in the number of banks amplifies market concentration, empowering
 surviving institutions to exercise greater pricing power. This drives up loan rates, exacerbating the
 borrowing costs for firms and households."
-    - title: "Bank Heterogeneity And Imperfect Competition"
+    - title: "Bank Heterogeneity and Imperfect Competition"
       link: "https://drive.google.com/file/d/1KxB-o-7k7JTQ0PLYkaawWmzFDR0r6gKw/view?usp=sharing"
       description: "This paper develops a DSGE open economy model featuring a banking sector with heterogeneous banks,
 characterized by a Pareto distribution of productivity and subject to occasionally binding collateral
@@ -46,23 +111,20 @@ constraints on foreign borrowing. The model investigates how bank productivity h
 with external financing conditions, affecting credit supply, firm investment, and macroeconomic stability.
 The analysis explores the dynamic responses to key shocks, including sudden stops in capital flows,
 central bank interest rate adjustments, and changes in bank entry and operational costs."
-  content: ''
+  content: "My research focuses on international macroeconomics, banking and financial markets. I study how disruptions in capital flows affect bank competition, credit supply and the wider economy."
   button1:
     icon: "icon-profile-fill"
     btnText: "Research Statement"
     URL: "/research_statement.pdf"
-  button2:
-    icon: "icon-profile-fill"
-    btnText: "Download my Job Market Paper"
-    URL: "https://drive.google.com/file/d/1Ff4-Rw_wGU3VqHkKuXI84s8eB18EEitB/view?usp=sharing"
 
 # conferences (new section)
 conferences:
   enable: true
-  title: "Conferences"
+  title: "Conferences and presentations"
   items:
-    - description: "Midwest Economics Association (MEA) 89th Annual Meeting in Kansas City, Missouri (March 21-23, 2025)"
-    - description: "Spring 2025 Midwest Economic Theory and International Trade Meetings, Virginia Tech (March 28-30)"
+    - description: "Midwest Economics Association 89th Annual Meeting, Kansas City, Missouri (March 21–23, 2025)"
+    - description: "Spring 2025 Midwest Economic Theory and International Trade Meetings, Virginia Tech (March 28–30, 2025)"
+    - description: "MTI Brownbag, University of Washington"
 
 # education
 education:
@@ -70,31 +132,39 @@ education:
   title: "Education"
   items:
     - university: "University of Washington, Seattle"
-      year: "2019 - 2025"
-      degree: "Ph.D. Economics"
+      year: "2019 – 2025"
+      completed: "Jun 2025"
+      degree: "PhD in Economics"
+      dissertation: "Bank Competition and Capital Flow Shocks in Open Economies"
+      details:
+        - "Analyzed 46 emerging economies and found weaker bank competition after sudden stops in capital inflows."
+        - "Used an open-economy model to examine how funding constraints affect bank entry and exit."
 
     - university: "Delhi School of Economics, University of Delhi"
-      year: "2014-2016"
-      degree: "M.A. Economics"
+      year: "2014 – 2016"
+      degree: "MA in Economics"
+
+    - university: "University of Delhi"
+      year: "2010 – 2013"
+      degree: "BSc in Physics"
+  fellowships:
+    - "Provost Richards’ Fund for Graduate Students, University of Washington"
+    - "Krishna Raj Fellowship for field research, University of Delhi"
 
 # experience
 experience:
   enable: true
   title: "Teaching"
-  description: ""
+  description: "I independently taught undergraduate Managerial Economics and Macroeconomics at the University of Washington."
   button:
     icon: "icon-profile-fill"
     btnText: "Teaching Dossier"
     URL: "/teaching_dossier.pdf"
-  button2:
-    icon: "icon-profile-fill"
-    btnText: "Download My Resume"
-    URL: "https://drive.google.com/file/d/1zlBAfxiJgqGIDbLwlsaprF7EgzkU7Pqr/view?usp=sharing"
 
   items:
     - title: "Instructor"
       company: "University of Washington, Seattle"
-      duration: "Summer 2021 - Fall 2024"
+      duration: "Summer 2021 – Fall 2024"
       details:
         - description: "Managerial Economics"
         - description: "Intermediate Macroeconomics"
@@ -109,14 +179,14 @@ experience:
 
     - title: "Teaching Assistant"
       company: "University of Washington, Seattle"
-      duration: "Winter 2020 - Spring 2021"
+      duration: "Winter 2020 – Spring 2021"
       details:
         - description: "Introduction to Microeconomics"
         - description: "Introduction to Macroeconomics"
 
     - title: "Reader/Grader"
       company: "University of Washington, Seattle"
-      duration: "Winter 2021 - Spring 2023"
+      duration: "Winter 2021 – Spring 2023"
       details:
         - description: "Advanced Macroeconomics"
         - description: "Investment, Capital and Finance"

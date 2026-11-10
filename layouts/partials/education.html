@@ -1,24 +1,34 @@
-{{ if .Site.Data.homepage.education.enable }}
-<section class="section section--border-bottom rad-animation-group" id="education">
-    <div class="container">
-        <div class="row rad-fade-down">
-            <div class="col-12">
-                <h2>{{ .Site.Data.homepage.education.title }}</h2>
-                <div class="row pt-2 pt-md-4">
-                    {{ range .Site.Data.homepage.education.items }}
-                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
-                        <div class="education">
-                            <div class="education__date">{{ .year }}</div>
-                            <div class="education__title">{{ .university }}</div>
-                            <div class="education__degree">
-                                {{ .degree }}
-                            </div>
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
-        </div>
+{{ with .Site.Data.homepage.education }}
+{{ if .enable }}
+<section class="portfolio-section" id="education" aria-labelledby="education-heading">
+  <div class="container">
+    <div class="portfolio-split">
+      <h2 class="portfolio-heading" id="education-heading">{{ .title }}</h2>
+      <div class="portfolio-entries">
+        {{ range .items }}
+        <article>
+          <p class="portfolio-meta">{{ .year }}{{ with .completed }} · Awarded {{ . }}{{ end }}</p>
+          <h3>{{ .degree }}</h3>
+          <p>{{ .university }}</p>
+          {{ with .dissertation }}<p>Dissertation · <em>{{ . }}</em></p>{{ end }}
+          {{ with .details }}
+          <ul class="portfolio-list">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </article>
+        {{ end }}
+        {{ with .fellowships }}
+        <article>
+          <h3>Fellowships</h3>
+          <ul class="portfolio-list">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </article>
+        {{ end }}
+      </div>
     </div>
+  </div>
 </section>
+{{ end }}
 {{ end }}
